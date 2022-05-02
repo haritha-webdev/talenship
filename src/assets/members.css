@@ -1,0 +1,214 @@
+body {
+    margin:0;
+    padding:0;
+    background-color: #fafafa;
+    font-size: 14px;
+}
+
+/*********** Header **********/
+
+.header {
+    width: 100%;
+    height:75px;
+    background-color: #e7e7e7;
+    padding:20px;
+}
+
+.header .inputWrap {
+    width: 35%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.inputWrap i {
+    position: absolute;
+    left: 12px;
+    top: 8px;
+}
+
+.inputWrap input {
+    border-radius: 18px;
+    border-color: #a1a1a1;
+    padding-left: 35px;
+}
+
+/*********** Footer **********/
+
+.footer {
+    width: 100%;
+    height:300px;
+    background-color: #363636;
+    padding:6% 20px;
+    text-align: center;
+    color:#FFF;
+    clear:both;
+}
+
+.footer .companyName{
+    font-weight: bold;
+}
+
+.footer .infoTexts {
+    font-size: 12px;
+}
+.footer .iconsWrap i{
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    background-color: #49a5ed;
+    color: #FFF;
+    display: inline-block;
+    font-size: 22px;
+    border-radius: 50%;
+}
+
+/*********** Content **********/
+
+.contentWrap {
+    min-height: calc(100vh - 375px);
+    margin: 2% 8%;
+}
+
+.contentWrap .breadCrumb a {
+    text-decoration: none;
+    color:#000;
+    font-size: 12px;
+    margin:2px;
+}
+
+
+.contentWrap .breadCrumb a::after {
+    content: ' > '
+}
+
+.contentWrap .breadCrumb a:last-child::after {
+    content: ''
+}
+
+.homeView {
+    margin-top:4%;
+}
+
+.homeView button, .homeView a{
+    width:50%;
+    height:50px;
+    margin: 20px auto;
+    display: block;
+}
+
+.memberView h3 {
+    margin:30px 0px;
+}
+
+.memberView .contentLayout{
+    margin-right: 15px;
+    float:left;
+}
+
+.memberView .layoutWrap{
+    border: 1px solid #e2e2e2;
+    padding: 15px;
+    border-radius: 4px;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.memberView .layoutWrap span {
+    position: relative;
+    top: 8px;
+}
+
+.memberView .controlPanel{
+    height:60px;
+    padding: 10px;
+    clear:both;
+}
+
+.memberView .orderFilter span{
+    font-weight: bold;
+}
+
+.memberView .orderFilter{
+    float: right;
+    width: 200px;
+}
+
+.memberView .orderFilter span {
+    float:left;
+}
+
+.memberView .orderFilter select {
+    width: 60%;
+    float: right;
+    border:none;
+}
+
+.memberView .memberList {
+    list-style: none;
+    padding:0;
+    clear:both;
+}
+
+.memberView .memberList li {
+    padding-right: 15px;
+    padding-top:10px;
+    display: inline-block;
+}
+
+.memberView .memberList li div {
+    border: 1px solid #e2e2e2;
+    border-radius: 4px;
+    padding:10px;
+    text-align: center;
+}
+
+.memberView .memberList li:nth-child(3n+3) {
+    padding-right:0;
+}
+
+.memberList .members .img {
+    border-radius: 50%;
+    height:80px;
+    width:80px;
+    margin:20px auto;
+    background-color: #a1a1a1;
+}
+
+.memberList .members p{
+    margin:2px;
+}
+
+.memberList .members .profileName {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.memberList .members .profileEmail {
+    margin-top: 15px;
+}
+
+.memberList .members .profileAddress {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.memberList .members .profileCity {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.memberView .paginationWrap {
+    text-align: center;
+    margin:20px 0px;
+}
+
+.memberView .viewMore {
+    color:#000;
+    text-decoration: underline;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.memberView .hideChks {
+    display: none;
+}
