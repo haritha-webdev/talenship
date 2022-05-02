@@ -12,7 +12,7 @@ const router = new VueRouter({
       path: '/', component: Home
     },
     {
-      path: '/members', component: Members
+      path: '/profiles', component: Members
     }
   ]
 });

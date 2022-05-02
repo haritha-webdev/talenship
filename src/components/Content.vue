@@ -4,9 +4,9 @@
       <router-link to="/">Home</router-link>
       <router-link
         v-if="
-          $route.path.indexOf('/members') > -1
+          $route.path.indexOf('/profiles') > -1
         "
-        to="/members"
+        to="/profiles"
         >Members</router-link
       >
     </div>
