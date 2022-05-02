@@ -77,6 +77,8 @@
           :items="filteredProfiles"
           @changePage="onChangePage"
           :pageSize="pageLength"
+          :styles="customStyles"
+          :labels="customLabels"
         ></jw-pagination>
       </div>
     </div>
@@ -89,6 +91,31 @@
 <script>
 import JwPagination from "jw-vue-pagination";
 import PageLoader from "../components/PageLoader.vue";
+
+const customLabels = {
+    first: '',
+    last: '',
+    previous: '<',
+    next: '>'
+};
+
+const customStyles = {
+    li: {
+        display: 'inline-block',
+        border: 'none'
+    },
+    a: {
+        border: 'none',
+        color:'#a1a1a1',
+        borderRadius: '0',
+        fontSize: '16px',
+        fontWeight: 'bold',
+        margin: '0px 7px',
+        padding:'4px 6px',
+        backgroundColor: 'transparent'
+    }
+    
+};
 
 export default {
   components: {
@@ -105,6 +132,8 @@ export default {
       sortMode: "name",
       viewMore: false,
       isLoading: false,
+      customStyles,
+      customLabels
     };
   },
   computed: {

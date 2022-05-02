@@ -212,3 +212,33 @@ body {
 .memberView .hideChks {
     display: none;
 }
+
+.page-item.active .page-link{
+    background-color: transparent !important;
+    border-bottom: 4px solid #a1a1a1 !important;
+}
+
+.disabled {
+    background-color: #e7e7e7 !important;
+    border-radius: 50% !important;
+    height: 36px;
+    width: 36px;
+    font-size: 28px !important;
+}
+
+.previous a, .next a{
+    font-size: 26px !important;
+    padding: 2px 2px !important;
+    margin: -6px 8px !important;
+
+}
+
+.previous, .next {
+    background-color: #363636;
+    border-radius: 50% !important;
+    height: 36px;
+    width: 36px;
+}
+.first, .last {
+    display: none !important;
+}
